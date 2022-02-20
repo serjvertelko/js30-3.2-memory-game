@@ -13,67 +13,113 @@
 </head>
 
 <body>
-    <header>
-        <div class="content-wrapper">
-            <div class="header__content">
-                <div class="header__timer-block">
-                    <div class="header__timer header-sec">
-                        <p class="heder__timer-min">0</p>
+    <div class="wrapper">
+        <header>
+            <div class="content-wrapper">
+                <div class="header__content">
+                    <div class="header__timer-block">
+                        <div class="header__timer header-sec">
+                            <p class="heder__timer-min">0</p>
+                        </div>
+                        <p class="heder__timer-timerItem">min</p>
+                        <div class="header__timer header-min">
+                            <p class="heder__timer-sec">0</p>
+                        </div>
+                        <p class="heder__timer-timerItem">Sec</p>
                     </div>
-                    <p class="heder__timer-timerItem">min</p>
-                    <div class="header__timer header-min">
-                        <p class="heder__timer-sec">0</p>
-                    </div>
-                    <p class="heder__timer-timerItem">Sec</p>
-                </div>
-                <div class="header__button">
-                    <div class="header-button-item">
-                        <button class="score-btn">score</button>
-                        <button class="start-btn">new game</button>
+                    <div class="header__button">
+                        <div class="header-button-item">
+                            <button class="score-btn">score</button>
+                            <button class="start-btn">new game</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="content-wrapper">
-            <div class="main__content">
-                <div class="new__game-block">
-                    <p class="new__game-item">
-                        Tap 'new game' button to start the game
-                    </p>
-                </div>
-                <div class="score__game-block">
-                    <p class="new__game-item">
-                        Tap 'new game' button to start the game
-                    </p>
-                </div>
-                <div class="memory-card">
-                    <img class="front-card" src="" alt="card">
-                    <img class="back-card" src="" alt="card">
+        </header>
+        <main class="main">
+            <div class="content-wrapper">
+                <div class="main__content">
+                    <div class="new__game-block  ">
+                        <p class="new__game-item">
+                            Tap 'new game' button to start the game
+                        </p>
+                    </div>
+                    <div class="score__game-block  ">
+                        <p class="new__game-item">
+                            Tap 'new game' button to start the game
+                        </p>
+                    </div>
+                    <div class="memory-card" data-set="angular">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/angular.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="angular">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/angular.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="aurelia">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/aurelia.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="aurelia">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/aurelia.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="backbone">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/backbone.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="backbone">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/backbone.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="ember">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/ember.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="ember">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/ember.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="vue">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/vue.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="vue">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/vue.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="react">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/react.svg" alt="back-card">
+                    </div>
+                    <div class="memory-card" data-set="react">
+                        <img class="front-card" src="./assets/svg/js-badge.svg" alt="front-card">
+                        <img class="back-card" src="./assets/svg/react.svg" alt="back-card">
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="content-wrapper">
-            <div class="footer__content">
-                <div class="footer__content-logo">
-                    <a href="https://rs.school/js-stage0/" target="blank"><img src="./assets/logo/rs_school_js.svg"
-                            alt="lRSSLogo" class="footer__content-img"></a>
-                </div>
-                <div class="footer__content-year">
-                    <h3 class="footer__content-text">2022</h3>
-                </div>
-                <div class="footer__content-github">
-                    <a href="https://github.com/serjvertelko" target="blank">
-                        <i class="fa-brands fa-github"></i>
-                        <h3 class="footer__content-text">Github</h3>
-                    </a>
+        </main>
+        <footer class="footer">
+            <div class="content-wrapper">
+                <div class="footer__content">
+                    <div class="footer__content-logo">
+                        <a href="https://rs.school/js-stage0/" target="blank"><img src="./assets/logo/rs_school_js.svg"
+                                alt="lRSSLogo" class="footer__content-img"></a>
+                    </div>
+                    <div class="footer__content-year">
+                        <h3 class="footer__content-text">2022</h3>
+                    </div>
+                    <div class="footer__content-github">
+                        <a href="https://github.com/serjvertelko" target="blank">
+                            <i class="fa-brands fa-github"></i>
+                            <h3 class="footer__content-text">Github</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="./script/script.js"></script>
 </body>
 

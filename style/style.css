@@ -1,5 +1,6 @@
 body {
     background-color: azure;
+
 }
 
 * {
@@ -36,6 +37,7 @@ button:active {
     transform: translateY(1px);
     transition: .5s;
 }
+
 
 .header__content {
     display: flex;
@@ -85,6 +87,7 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 9999;
 }
 
 .score__game-block {
@@ -99,11 +102,16 @@ button:active {
     background-color: red;
     opacity: 0;
     transition: 1.5s;
+    z-index: -1;
 }
 
 .main__content {
-    height: 500px;
+
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1000px;
 }
 
 .new__game-item {
@@ -111,6 +119,41 @@ button:active {
     font-size: 30px;
     text-transform: uppercase;
 }
+
+.memory-card {
+    cursor: pointer;
+    width: 120px;
+    height: 170px;
+    background-color: blue;
+    border-radius: 5px;
+    margin: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+}
+
+.memory-card:active {
+    transform: scale(0.8);
+    transition: 1.0s;
+}
+
+.front-card {
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.back-card {
+    padding: 20px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
 
 .footer__content-img {
     width: 100px;
@@ -147,9 +190,17 @@ button:active {
 
 .block {
     opacity: 0;
+    z-index: -1;
     transition: .5s;
 }
+
 .active {
     opacity: 1;
+    z-index: 999;
+    transition: 1.5s;
+}
+
+.open {
+    transform: rotateY(180deg);
     transition: 1.5s;
 }
