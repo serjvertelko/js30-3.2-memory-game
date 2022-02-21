@@ -1,0 +1,206 @@
+body {
+    background-color: azure;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background-color: burlywood;
+    box-shadow: 0 0 8px black;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: rgba(222, 184, 135, 0.822);
+    transition: .5s;
+}
+
+button:active {
+    background-color: rgba(222, 184, 135, 0.336);
+    transform: translateY(1px);
+    transition: .5s;
+}
+
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+
+.header__timer {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: .5rem .7rem;
+}
+
+.header__timer-block {
+    display: flex;
+    align-items: center;
+}
+
+.heder__timer-timerItem {
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+.header__button {
+    margin-left: 2rem;
+}
+
+.header-button-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-btn {
+    margin-left: 2rem;
+
+}
+
+.new__game-block {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.score__game-block {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    opacity: 0;
+    transition: 1.5s;
+    z-index: -1;
+}
+
+.main__content {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1000px;
+}
+
+.new__game-item {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.memory-card {
+    cursor: pointer;
+    width: 120px;
+    height: 170px;
+    background-color: blue;
+    border-radius: 5px;
+    margin: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+    transform-style: preserve-3d;
+}
+
+.memory-card:active {
+    transform: scale(0.8);
+    transition: 1.0s;
+}
+
+.front-card {
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.back-card {
+    padding: 20px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
+.footer__content-img {
+    width: 100px;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.footer__content-github a {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block {
+    opacity: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.active {
+    opacity: 1;
+    z-index: 999;
+    transition: 1.5s;
+}
+
+.open {
+    transform: rotateY(180deg);
+    transition: 1.5s;
+}
