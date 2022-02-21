@@ -21,13 +21,13 @@ let startgameInterval,
     coin = 0,
     totalCoin = 5;
 
-// randomCard()
-// function randomCard() {
-//     memoryCard.forEach(card => {
-//         let ramdomPos = Math.floor(Math.random() * 12);
-//         card.style.order = ramdomPos;
-//     });
-// }
+ randomCard()
+ function randomCard() {
+     memoryCard.forEach(card => {
+         let ramdomPos = Math.floor(Math.random() * 12);
+         card.style.order = ramdomPos;
+     });
+ }
 
 startGameBtn.addEventListener("click", () => {
     startGame();
